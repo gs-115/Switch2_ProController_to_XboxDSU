@@ -18,9 +18,9 @@ Python script meant to communicate with a Nintendo Switch 2 Pro Controller throu
 
 # How to install
 The python script needs these 3 modules to function:
-pyusb `pip install pyusb`
-libusb `pip install libusb`
-vgamepad `pip install vgamepad`, running this command will also prompt the installation of the ViGEmBus driver, you can skip it if you already have it installed
+- pyusb `pip install pyusb`
+- libusb `pip install libusb`
+- vgamepad `pip install vgamepad`, running this command will also prompt the installation of the ViGEmBus driver, you can skip it if you already have it installed
 
 Install the libusb backend:
 [libusb website](https://libusb.info/)

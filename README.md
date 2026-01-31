@@ -32,11 +32,16 @@ Plug in your Pro 2 Controller, start the script, and type `cal` to calibrate the
 
 # How to use
 Press enter (or the C button on the controller if the option is still enabled) to change the mapping of the GL and GR buttons
+
 Type `swap` to exchange the A/B and X/Y buttons
+
 Most Nintendo emulators should recognize the Xbox interface and DSU server ("Cemuhook"), you only need to configure the inputs for rumble and gyro to work properly
 
 # Resources used to create this script
 Wireshark dissectors by german77, [JoyconDriver](https://github.com/german77/JoyconDriver)
+
 Similar BLE scripts by TheFrano, [joycon2py](https://github.com/TheFrano/joycon2py) and [joycon2cpp](https://github.com/TheFrano/joycon2cpp)
+
 Rumble formula inspiration, [Nintendo_Switch_Reverse_Engineering](https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering/tree/master)
+
 Listening to Steam Input USB communication usign Wireshark

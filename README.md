@@ -17,14 +17,14 @@ Python script meant to communicate with a Nintendo Switch 2 Pro Controller throu
 - Some features like the magnetometer or the NFC reader are unused
 
 # How to install
-The python scripts needs these 3 modules to function:
+The python script needs these 3 modules to function:
 pyusb `pip install pyusb`
 libusb `pip install libusb`
-vgamepad `pip install vgamepad`, running this command will also prompt the install of the ViGEmBus driver, you can skip it if you already have it installed
+vgamepad `pip install vgamepad`, running this command will also prompt the installation of the ViGEmBus driver, you can skip it if you already have it installed
 
 Install the libusb backend:
-[lisbusb website](https://libusb.info/)
-Personally I had to install `libusb-1.0.29.7z` from the [libsub releases](https://github.com/libusb/libusb/releases) and then place `MinGW64\dll\libusb-1.0.dll` in `C:\Windows\System32\`
+[libusb website](https://libusb.info/)
+Personally I had to install `libusb-1.0.29.7z` from the [libusb releases](https://github.com/libusb/libusb/releases) and then place `MinGW64\dll\libusb-1.0.dll` in `C:\Windows\System32\`
 
 Set the user parameters of the script to your preferences (They are at the beginning)
 
@@ -35,7 +35,7 @@ Press enter (or the C button on the controller if the option is still enabled) t
 
 Type `swap` to exchange the A/B and X/Y buttons
 
-Most Nintendo emulators should recognize the Xbox interface and DSU server ("Cemuhook"), you only need to configure the inputs for rumble and gyro to work properly
+Most Nintendo emulators should recognize the Xbox interface and DSU server ("Cemuhook"). You only need to configure the inputs for rumble and gyro to work properly
 
 # Resources used to create this script
 Wireshark dissectors by german77, [JoyconDriver](https://github.com/german77/JoyconDriver)
@@ -44,4 +44,4 @@ Similar BLE scripts by TheFrano, [joycon2py](https://github.com/TheFrano/joycon2
 
 Rumble formula inspiration, [Nintendo_Switch_Reverse_Engineering](https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering/tree/master)
 
-Listening to Steam Input USB communication usign Wireshark
+Listening to Steam Input USB communication using Wireshark

@@ -26,7 +26,7 @@ Install the libusb backend:
 [libusb website](https://libusb.info/)
 Personally I had to install `libusb-1.0.29.7z` from the [libusb releases](https://github.com/libusb/libusb/releases) and then place `MinGW64\dll\libusb-1.0.dll` in `C:\Windows\System32\`
 
-Set the user parameters of the script to your preferences (They are at the beginning)
+Set the user parameters of the script to your preferences (They are at the beginning of the file)
 
 Plug in your Pro 2 Controller, start the script, and type `cal` to calibrate the joysticks for the first time
 

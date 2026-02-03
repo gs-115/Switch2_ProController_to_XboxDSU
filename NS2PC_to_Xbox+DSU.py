@@ -96,7 +96,7 @@ commands_steam = [  # Commands sent from steam input in usb mode
 # Amplitude between 0x00-0xFF (seems linear?)
 # Frequency between 0x000-0x330 (not linear) to create a sound (the conversion function freq_to_byte was mapped using value from 60hz to 3700Hz)
 
-# Frequency to hex: b = 96.4187235416 * log2( f / 10.7) with f in Herts
+# Frequency to hex: b = 96.4187235416 * log2( f / 10.7) with f in Herts ( b=0 if f <= 10.7)
 # Hex to frequency: f = 10.7 * 2^( h / 96.4187235416 )
 
 # The frequency range loops 4 times in the 0x000 to 0xFFF range since the last two MSB are unused
@@ -252,9 +252,9 @@ def task_USB_COMM(button_link, motionaxis_link, haptic_link):
                 main_A & 0xFF]
 
     def freq_to_byte(f):  # In Herts, range 0hz to 3700Hz
-        if f == 0.0:
+        if f <= 10.7:
             return 0
-        return int(96.4187235416*math.log(f/10.7, 2))
+        return int(96.4187235416*math.log(f/10.7, 2)+0.5)
 
     def bytes_to_freq(b):
         return 10.7*2**(b/96.4187235416)
@@ -1071,3 +1071,4 @@ if __name__ == '__main__':
         t_dsugyro.join()
     except KeyboardInterrupt:
         ...
+

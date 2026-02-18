@@ -997,7 +997,7 @@ def task_DSU_Gyro_Server(gyro_link):
     avrg_cal = [0, 0, 0]
     avrg_total_time = 0
     last_val = (0, 0, 0)
-    max_der = 260  # °/s^2
+    max_der = 290  # °/s^2
     still_duration = 3  # s
     try:
         while True:
@@ -1071,4 +1071,5 @@ if __name__ == '__main__':
         t_dsugyro.join()
     except KeyboardInterrupt:
         ...
+
 
